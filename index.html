@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Max Estates - Luxury Living Redefined | Premium Real Estate in Noida</title>
+    <meta name="description" content="Experience ultra-luxury living at Max Estate 128, Noida. Premium 4 & 5 BHK apartments with world-class amenities, wellness-focused design, and prime location." />
+    <meta name="author" content="Max Estates" />
+    <meta name="keywords" content="luxury apartments Noida, Max Estate 128, premium real estate, 4 BHK 5 BHK apartments, Sector 128 Noida, Max Group, luxury living, premium residential, Noida real estate" />
+    
+    <!-- Additional Professional Meta Tags -->
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="distribution" content="global" />
+    <meta name="rating" content="general" />
+    <meta name="theme-color" content="#d4af37" />
+    <meta name="msapplication-TileColor" content="#d4af37" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Max Estate 128" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon_io/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon_io/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/favicon_io/android-chrome-512x512.png" />
+
+    <!-- Critical CSS inline for faster rendering -->
+    <style>
+      /* Critical above-the-fold styles */
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body { 
+        font-family: system-ui, -apple-system, sans-serif; 
+        line-height: 1.6; 
+        margin: 0; 
+        padding: 0;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      #root { min-height: 100vh; }
+      .min-h-screen { min-height: 100vh; }
+      .container { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
+      .animate-spin { animation: spin 1s linear infinite; }
+      @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+      .animate-pulse { animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+      @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .5; } }
+    </style>
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="/banner-images.jpg" as="image" type="image/jpeg" />
+    
+    <!-- DNS prefetch for external resources -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="//wa.me" />
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://wa.me" crossorigin />
+
+    <meta property="og:title" content="Max Estates - Luxury Living Redefined | Premium Real Estate in Noida" />
+    <meta property="og:description" content="Experience ultra-luxury living at Max Estate 128, Noida. Premium 4 & 5 BHK apartments with world-class amenities, wellness-focused design, and prime location." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/banner-images.jpg" />
+
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Max Estates - Luxury Living Redefined" />
+    <meta name="twitter:description" content="Experience ultra-luxury living at Max Estate 128, Noida. Premium 4 & 5 BHK apartments with world-class amenities." />
+    <meta name="twitter:image" content="/banner-images.jpg" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      // Register service worker for caching
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then((registration) => {
+              console.log('SW registered: ', registration);
+            })
+            .catch((registrationError) => {
+              console.log('SW registration failed: ', registrationError);
+            });
+        });
+      }
+    </script>
+  </body>
+</html>
